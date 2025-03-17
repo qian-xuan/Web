@@ -1,0 +1,25 @@
+#registerForm {
+    display: flexbox;
+    /* font: ; */
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#title {
+    padding: 1%;
+}
+
+.box {
+    /* justify-content: space-between; */
+    border: 2px solid #F1F2F5;
+    border-radius: 3px;
+    height: 30px;
+    margin: 3px;
+    width: 100%;
+}
+
+.radio {
+    color: aqua;
+}
