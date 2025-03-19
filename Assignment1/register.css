@@ -4,6 +4,7 @@
     margin-top: 50px;
     border-radius: 10px;
     background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .inputArea {
@@ -74,6 +75,14 @@
     border: none;
     border-radius: 3px;
     cursor: pointer;
+}
+
+.verifyWarning {
+    height: 12px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
 }
 
 /* 提供你的出生日期将确保金山办公提供与你年龄相符的使用体验。详细信息，请参阅我们的隐私权政策。 */

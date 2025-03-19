@@ -23,11 +23,24 @@
         <form class="inputArea">
             <!-- 基本信息 -->
             <div class="mutipleBox">
-                <div><input type="text" class="box" placeholder="姓"></div>
-                <div><input type="text" class="box" placeholder="名"></div>
+                <div style="position: relative;">
+                    <input type="text" id="lastname" class="box" placeholder="姓">
+                    <img src="pic/red.png" id="lastnameWarning" class="verifyWarning" hidden>
+                </div>
+                <div style="position: relative;">
+                    <input type="text" id="firstname" class="box" placeholder="名">
+                    <img src="pic/red.png" id="firstnameWarning" class="verifyWarning" hidden>
+                </div>
             </div>
-            <input type="text" class="box" placeholder="手机号或邮箱">
-            <input type="text" class="box" placeholder="创建密码">
+            <div style="position: relative;">
+                <input type="text" id="phoneOrEmail" class="box" placeholder="手机号或邮箱">
+                <img src="pic/red.png" id="phoneOrEmailWarning" class="verifyWarning" hidden>
+            </div>
+            <div style="position: relative;">
+                <input type="text" id="password" class="box" placeholder="创建密码">
+                <!-- style="border-color: #C9382E; -->
+                <img src="pic/red.png" id="passwordWarning" class="verifyWarning" hidden>
+            </div>
             <!-- 出生日期 -->
             <div>
                 <div style="margin: 2px; opacity: 50%; font-size: 12px; display: inline;">
@@ -38,9 +51,9 @@
                 style="height: 10px;">
 
                 <div id="date" class="mutipleBox">
-                    <select name="year" id="year" class="box selectBox"></select>
-                    <select name="month" id="month" class="box selectBox"></select>
-                    <select name="day" id="day" class="box selectBox"></select>
+                    <select id="birthdayYear" class="box selectBox"></select>
+                    <select id="birthdayMonth" class="box selectBox"></select>
+                    <select id="birthdayDay" class="box selectBox"></select>
                 </div>
             </div>
 
@@ -74,7 +87,7 @@
                 <label>点击注册，即表示你同意接受我们的条款、隐私权政策和Cookie政策。你可能会收到我们的短信通知，并可以随时退订。</label>
             </div>
             <div style="text-align: center;">
-                <button type="submit" class="button">注册</button>
+                <button type="submit" class="button" >注册</button>
             </div>
             <div style="text-align: center;">
                 <a href="something_like_login.html"  style="text-decoration: none; color: #5478EE">有账户了？</a>
@@ -84,4 +97,5 @@
 
     <script src="setDate.js"></script>
     <script src="setGender.js"></script>
+    <script src="verify.js"></script>
 </html>

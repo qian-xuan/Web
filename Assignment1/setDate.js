@@ -1,6 +1,6 @@
-const yearSelect = document.getElementById('year');
-const monthSelect = document.getElementById('month');
-const daySelect = document.getElementById('day');
+const yearSelect = document.getElementById('birthdayYear');
+const monthSelect = document.getElementById('birthdayMonth');
+const daySelect = document.getElementById('birthdayDay');
 
 // 生成年份选项
 const currentYear = new Date().getFullYear();
