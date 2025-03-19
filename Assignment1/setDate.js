@@ -36,6 +36,8 @@ yearSelect.value = currentYear;
 monthSelect.value = new Date().getMonth();
 daySelect.value = new Date().getDate();
 
+// console.log(daySelect.value);
+
 // 初始化日期选项
 generateDays(yearSelect.value, monthSelect.value);
 
