@@ -30,9 +30,13 @@
             <input type="text" class="box" placeholder="创建密码">
             <!-- 出生日期 -->
             <div>
-                <div style="margin: 1px; opacity: 50%; font-size: 12px;">
+                <div style="margin: 2px; opacity: 50%; font-size: 12px; display: inline;">
                     <label>出生日期</label>
                 </div>
+                <img src="pic/grey.png"
+                title="点击查看更多信息"
+                style="height: 10px;">
+
                 <div id="date" class="mutipleBox">
                     <select name="year" id="year" class="box selectBox"></select>
                     <select name="month" id="month" class="box selectBox"></select>
@@ -42,9 +46,13 @@
 
             <!-- 性别选择框 -->
             <div>
-                <div style="margin: 1px; opacity: 50%; font-size: 12px;">
+                <div style="margin: 2px; opacity: 50%; font-size: 12px; display: inline;">
                     <label>性别</label>
                 </div>
+                <img src="pic/grey.png"
+                title="点击查看更多信息"
+                style="height: 10px;">
+
                 <div id="gender" class="mutipleBox">
                     <div class="box narrowBox">
                         <div><label style="text-align: left;">女</label></div>
@@ -56,11 +64,11 @@
                     </div>
                     <div class="box narrowBox">
                         <label style="text-align: left;">自定义</label>
-                        <input type="radio" name="gender" value="others" class="radio">
+                        <input type="radio" name="gender" value="others" id="gender_others" class="radio">
                     </div>
                 </div>
             </div>
-            <input type="text" class="box" placeholder="请输入您的性别">
+            <input type="text" id="gender_text" class="box" placeholder="请输入您的性别" style="display: none;">
 
             <div style="text-align: left; opacity: 50%; font-size: 12px;">
                 <label>点击注册，即表示你同意接受我们的条款、隐私权政策和Cookie政策。你可能会收到我们的短信通知，并可以随时退订。</label>
@@ -68,11 +76,12 @@
             <div style="text-align: center;">
                 <button type="submit" class="button">注册</button>
             </div>
-            <div style="text-align: center; opacity: 50%;">
-                <a href="login.html"  style="text-decoration: none;">有账户了？</a>
+            <div style="text-align: center;">
+                <a href="something_like_login.html"  style="text-decoration: none; color: #5478EE">有账户了？</a>
             </div>
         </form>
     </div>
 
     <script src="setDate.js"></script>
+    <script src="setGender.js"></script>
 </html>
