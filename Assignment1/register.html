@@ -9,35 +9,37 @@
 <body bgcolor="#F1F2F5">
     <div id="registerForm">
         <!-- 标题 -->
-        <div id="title"">
+        <div >
             <div style="text-align: center; font-size: 25px; font-weight: 1000;">
                 <label>创建新账户</lable>
             </div>
-            <div style="text-align: center; opacity: 50%;">
-                <label>快速又简便。</label>
-            </div>
+        </div>
+        <div style="text-align: center; opacity: 50%;">
+            <label>快速又简便。</label>
         </div>
         <!-- 分割线 -->
-        <hr style="height: 2px; background-color: #F1F2F5; border: none;">
+        <div><hr style="height: 2px; background-color: #F1F2F5; border: none;"></div>
         <!-- form -->
         <div style="padding: 3%;">
             <form>
                 <!-- 基本信息 -->
-                <div id="info">
-                    <div style="display: inline; width: 50%;"><input type="text" class="box" placeholder="姓"></div>
-                    <div style="display: inline; width: 50%;"><input type="text" class="box" placeholder="名"></div>
-                    <div><input type="text" class="box" placeholder="手机号或邮箱"></div>
-                    <div><input type="text" class="box" placeholder="创建密码"></div>
+                <div class="item">
+                    <div><input type="text" class="box" placeholder="姓"></div>
+                    <div><input type="text" class="box" placeholder="名"></div>
                 </div>
+                <div class="item"><input type="text" class="box" placeholder="手机号或邮箱"></div>
+                <div class="item"><input type="text" class="box" placeholder="创建密码"></div>
                 <!-- 出生日期 -->
                 <div id="date">
                     <label>出生日期</label><br>
-                    <select name="year" id="" form="">
-                    </select>
+                    <select name="year" id="year"></select>
+                    <select name="month" id="month"></select>
+                    <select name="day" id="day"></select>
                 </div>
+
                 <!-- 性别选择框 -->
-                
-                <div>
+                <label>性别</label><br>
+                <div id="gender" class="item">
                     <div class="box">
                         <label style="text-align: left;">女</label>
                         <input type="radio" name="gender" value="female" class="radio" checked>
@@ -52,19 +54,16 @@
                     </div>
                 </div>
 
-                <!-- <label>
-                    <input type="radio" name="gender" value="female" checked> 女
-                </label>
-                <label>
-                    <input type="radio" name="gender" value="male"> 男
-                </label>
-                <label>
-                    <input type="radio" name="gender" value="others"> 其他
-                </label> -->
+                <div class="item">
+                    <input type="text" class="box" placeholder="请输入您的性别">
+                </div>
 
+                <div style="text-align: center; opacity: 50%; font-size: small;">
+                    <label>点击注册，即表示你同意接受我们的条款、隐私权政策和Cookie政策。你可能会收到我们的短信通知，并可以随时退订。</label>
+                </div>
             </form>
         </div>
     </div>
 
-    <!-- <script src="register.js"></script> -->
+    <script src="setDate.js"></script>
 </html>
