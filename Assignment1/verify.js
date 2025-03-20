@@ -25,6 +25,6 @@ form.addEventListener('submit', (event) => {
     });
 
     // 提交表单
-    console.log('表单验证通过，提交表单');
+    // console.log('提交表单');
     form.submit();
 });
