@@ -12,14 +12,13 @@ form.addEventListener('submit', (event) => {
     // debugger;
     // 验证逻辑
     elements.forEach(element => {
-        if (element.value === '') {
+        const warning = document.getElementById(element.id+"Warning");
+        if (element.value.trim() === '') {
             element.style.borderColor = '#C9382E';
-            const warning = document.getElementById(element.id+"Warning");
             warning.hidden = false;
             warning.title = '此项不能为空';
         } else {
             element.style.borderColor = '#F1F2F5';
-            const warning = document.getElementById(element.id+"Warning");
             warning.hidden = true;
         }
     });
